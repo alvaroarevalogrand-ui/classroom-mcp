@@ -1,0 +1,30 @@
+# Secrets / credentials
+credentials.json
+token.json
+client_secret*.json
+*client_secret*.json
+.env
+
+# Environments / caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# Downloads
+descargas/
+downloads/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local launcher shims (not part of the package)
+/server.py
+/auth.py
+.claude/
