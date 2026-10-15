@@ -29,7 +29,7 @@ La API de Classroom solo permite `modifyAttachments` y `turnIn` sobre tareas **c
 ## Instalación
 
 ```bash
-git clone https://github.com/alvaroarevalo/classroom-mcp.git
+git clone https://github.com/alvaroarevalogrand-ui/classroom-mcp.git
 cd classroom-mcp
 python -m venv .venv
 .venv/bin/pip install -e .          # Windows: .venv\Scripts\pip install -e .

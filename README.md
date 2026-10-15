@@ -1,6 +1,6 @@
 # classroom-mcp
 
-[![CI](https://github.com/alvaroarevalo/classroom-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/alvaroarevalo/classroom-mcp/actions/workflows/ci.yml)
+[![CI](https://github.com/alvaroarevalogrand-ui/classroom-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/alvaroarevalogrand-ui/classroom-mcp/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
@@ -48,7 +48,7 @@ The Classroom API only allows `modifyAttachments` and `turnIn` on coursework **c
 ## Install
 
 ```bash
-git clone https://github.com/alvaroarevalo/classroom-mcp.git
+git clone https://github.com/alvaroarevalogrand-ui/classroom-mcp.git
 cd classroom-mcp
 python -m venv .venv
 .venv/bin/pip install -e .          # Windows: .venv\Scripts\pip install -e .
