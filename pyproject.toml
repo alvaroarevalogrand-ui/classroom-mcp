@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "classroom-mcp"
+version = "0.1.0"
+description = "MCP server to use Google Classroom from Claude (courses, assignments, materials, downloads)"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Álvaro Arévalo" }]
+requires-python = ">=3.10"
+keywords = ["mcp", "model-context-protocol", "claude", "google-classroom"]
+dependencies = [
+    "mcp>=1.2.0,<2",
+    "google-api-python-client>=2.100.0",
+    "google-auth>=2.23.0",
+    "google-auth-oauthlib>=1.1.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.5"]
+
+[project.scripts]
+classroom-mcp = "classroom_mcp.server:main"
+classroom-mcp-auth = "classroom_mcp.auth:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/classroom_mcp"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
